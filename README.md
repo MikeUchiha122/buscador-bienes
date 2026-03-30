@@ -1,16 +1,12 @@
 # 🗂️ Asset Manager
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Python-3.8+-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python">
   <img src="https://img.shields.io/badge/License-MIT-green?style=for-the-badge">
   <img src="https://img.shields.io/badge/Platform-Windows-blue?style=for-the-badge">
+  <img src="https://img.shields.io/badge/Portable-Yes-green?style=for-the-badge">
 </p>
 
 > Aplicación de escritorio para la gestión integral de inventarios de activos empresariales.
-
-## 📋 Descripción
-
-**Asset Manager** es una solución de escritorio desarrollada en Python que permite administrar inventarios de activos mediante una interfaz gráfica moderna e intuitiva.
 
 ## ✨ Características
 
@@ -21,14 +17,19 @@
 | ✏️ **Gestión Completa** | Ver detalle, editar campos y gestionar estados |
 | 🌙 **Interfaz Oscura** | Diseño moderno con tema oscuro profesional |
 | 📝 **Logging** | Registro completo de operaciones del sistema |
+| 🔐 **Sin Admin** | No requiere permisos de administrador |
 
-## 🛠️ Requisitos
+## ⬇️ Descarga
 
-- **Python**: 3.8 o superior
-- **SO**: Windows 7/8/10/11
-- **Dependencias**: `pandas`, `openpyxl`
+### 🎯 Versión Portable (Recomendada)
 
-## 🚀 Instalación
+**No requiere Python ni instalación.**
+
+1. Ve a [Releases](https://github.com/MikeUchiha122/buscador-bienes/releases)
+2. Descarga `AssetManager.zip`
+3. Extrae y ejecuta `AssetManager.exe`
+
+### 💻 Versión Código Fuente
 
 ```bash
 # Clonar repositorio
@@ -39,13 +40,19 @@ cd buscador-bienes
 
 # Instalar dependencias
 pip install pandas openpyxl
-```
 
-## 💻 Uso
-
-```bash
+# Ejecutar
 python buscador_bienes.py
 ```
+
+## 🚀 Uso
+
+Simplemente ejecuta `AssetManager.exe`. No necesita:
+- Python instalado
+- Permisos de administrador
+- Instalación
+
+Todo se ejecuta en la carpeta donde copies la aplicación.
 
 ### Controles
 
@@ -57,19 +64,13 @@ python buscador_bienes.py
 | **Editar** | Selecciona fila y modifica campos |
 | **Gestionar** | Botón para cambiar estado del activo |
 
-## 📁 Estructura
+## 📁 Estructura Portable
 
 ```
-buscador-bienes/
-├── buscador_bienes.py         # Aplicación principal
-├── crear_word.py              # Generador de documentos
-├── crear_word2.py              # Generador de documentos v2
-├── cruzar_bienes.py           # Utilidad de cruces
-├── cruzar_inventario.py       # Utilidad de cruces
-├── cruzar_por_inventario.py
-├── BASE_BIENES_UNIDAD.xlsx    # Base de datos
-├── bienes.log                 # Logs del sistema
-└── README.md                  # Este archivo
+AssetManager/
+├── AssetManager.exe           # Ejecutable principal
+├── BASE_BIENES_UNIDAD.xlsx   # Base de datos
+└── bienes.log               # Logs (se crea al usar)
 ```
 
 ## 🖥️ Vista Previa
@@ -78,7 +79,7 @@ buscador-bienes/
 ┌─────────────────────────────────────────────────┐
 │  🗂️ Asset Manager                    [─][□][×] │
 ├─────────────────────────────────────────────────┤
-│  🔍 Buscar...                        [BUSCAR]  │
+│  🔍 Buscar...                        [BUSCAR]   │
 ├─────────────────────────────────────────────────┤
 │  [ACTIVOS] [INACTIVOS] [TODOS]                  │
 ├─────────────────────────────────────────────────┤
@@ -98,16 +99,17 @@ buscador-bienes/
 
 | Tecnología | Propósito |
 |------------|-----------|
-| Python 3.8+ | Lenguaje principal |
+| Python | Lenguaje principal |
 | Tkinter | Interfaz gráfica |
 | Pandas | Manipulación de datos |
 | Excel | Almacenamiento |
+| PyInstaller | Compilación portable |
 
 </div>
 
 ## 📄 Licencia
 
-Este proyecto está bajo la **Licencia MIT**. Consulta el archivo `LICENSE` para más información.
+Este proyecto está bajo la **Licencia MIT**.
 
 ---
 
