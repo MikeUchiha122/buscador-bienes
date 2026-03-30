@@ -1,129 +1,53 @@
-# 🗂️ Asset Manager
+﻿# Buscador de Bienes SICOBIM
 
-<p align="center">
-  <img src="https://img.shields.io/badge/License-MIT-green?style=for-the-badge">
-  <img src="https://img.shields.io/badge/Platform-Windows-blue?style=for-the-badge">
-  <img src="https://img.shields.io/badge/Portable-Yes-green?style=for-the-badge">
-</p>
+Aplicacion de escritorio para gestionar el inventario de bienes muebles del ISSSTE Mexico.
 
-> Aplicación de escritorio para la gestión integral de inventarios de activos empresariales.
+## Caracteristicas
 
-## ✨ Características
+- Busqueda avanzada por inventario, descripcion, ubicacion o estado
+- Filtros dinamicos: VIGENTES, BAJAS, TODOS
+- Gestion completa: ver detalle, editar campos y dar de baja bienes
+- Interfaz oscura con tema moderno
+- Logging de operaciones
+- No requiere permisos de administrador
 
-| Función | Descripción |
-|---------|-------------|
-| 🔍 **Búsqueda Avanzada** | Filtra por código, descripción, ubicación o estado |
-| 📊 **Filtros Dinámicos** | Visualiza activos por estado: ACTIVOS, INACTIVOS, TODOS |
-| ✏️ **Gestión Completa** | Ver detalle, editar campos y gestionar estados |
-| 🌙 **Interfaz Oscura** | Diseño moderno con tema oscuro profesional |
-| 📝 **Logging** | Registro completo de operaciones del sistema |
-| 🔐 **Sin Admin** | No requiere permisos de administrador |
+## Descarga
 
-## ⬇️ Descarga
+### Version Portable (Recomendada)
 
-### 🎯 Versión Portable (Recomendada)
+1. Ve a Releases: https://github.com/MikeUchiha122/buscador-bienes/releases
+2. Descarga BuscadorBienes-SICOBIM.zip
+3. Extrae y ejecuta BuscadorBienes.exe
 
-**No requiere Python ni instalación.**
+### Version Codigo Fuente
 
-1. Ve a [Releases](https://github.com/MikeUchiha122/buscador-bienes/releases)
-2. Descarga `AssetManager.zip`
-3. Extrae y ejecuta `AssetManager.exe`
-
-### 💻 Versión Código Fuente
-
-```bash
-# Clonar repositorio
 git clone https://github.com/MikeUchiha122/buscador-bienes.git
-
-# Entrar al directorio
 cd buscador-bienes
-
-# Instalar dependencias
 pip install pandas openpyxl
-
-# Ejecutar
 python buscador_bienes.py
-```
 
-## 🚀 Uso
+## Uso
 
-Simplemente ejecuta `AssetManager.exe`. No necesita:
+Simplemente ejecuta BuscadorBienes.exe. No necesita:
 - Python instalado
 - Permisos de administrador
-- Instalación
+- Instalacion
 
-Todo se ejecuta en la carpeta donde copies la aplicación.
+## Estructura Portable
 
-### Controles
+BuscadorBienes-SICOBIM/
+- BuscadorBienes.exe
+- BASE_BIENES_UNIDAD.xlsx
+- bienes.log (se crea al usar)
 
-| Acción | Descripción |
-|--------|-------------|
-| **Búsqueda** | Escribe para filtrar en tiempo real |
-| **Filtros** | Botones para estados: ACTIVOS / INACTIVOS / TODOS |
-| **Detalle** | Doble clic en fila para ver información completa |
-| **Editar** | Selecciona fila y modifica campos |
-| **Gestionar** | Botón para cambiar estado del activo |
+## Tecnologias
 
-## 📁 Estructura Portable
+- Python + Tkinter + Pandas + Excel + PyInstaller
 
-```
-AssetManager/
-├── AssetManager.exe           # Ejecutable principal
-├── BASE_BIENES_UNIDAD.xlsx   # Base de datos
-└── bienes.log               # Logs (se crea al usar)
-```
+## Licencia
 
-## 🖥️ Vista Previa
-
-```
-┌─────────────────────────────────────────────────┐
-│  🗂️ Asset Manager                    [─][□][×] │
-├─────────────────────────────────────────────────┤
-│  🔍 Buscar...                        [BUSCAR]   │
-├─────────────────────────────────────────────────┤
-│  [ACTIVOS] [INACTIVOS] [TODOS]                  │
-├─────────────────────────────────────────────────┤
-│  #  │ Código   │ Descripción    │ Ubicación   │
-│─────┼──────────┼────────────────┼──────────────│
-│  1  │ INV-001  │ Laptop Dell    │ Oficina A    │
-│  2  │ INV-002  │ Escritorio    │ Oficina B    │
-│  3  │ INV-003  │ Silla Ergonom. │ Bodega       │
-├─────────────────────────────────────────────────┤
-│  [EDITAR]  [VER DETALLE]  [GESTIONAR]           │
-└─────────────────────────────────────────────────┘
-```
-
-## 🔧 Tecnologías
-
-<div align="center">
-
-| Tecnología | Propósito |
-|------------|-----------|
-| Python | Lenguaje principal |
-| Tkinter | Interfaz gráfica |
-| Pandas | Manipulación de datos |
-| Excel | Almacenamiento |
-| PyInstaller | Compilación portable |
-
-</div>
-
-## 📚 Documentación
-
-| Documento | Descripción |
-|-----------|-------------|
-| [📖 GUIA.md](docs/GUIA.md) | Guía completa de uso |
-| [📄 GUIA_COMPLETA.docx](GUIA_COMPLETA_BUSCADOR_BIENES.docx) | Guía técnica detallada |
-
-## 📄 Licencia
-
-Este proyecto está bajo la **Licencia MIT**.
+MIT
 
 ---
 
-<div align="center">
-
-**Desarrollado por** Miguel Ángel Ramírez Galicia
-
-⭐️ ¡Dale una estrella si te fue útil!
-
-</div>
+Desarrollado por Miguel Angel Ramirez Galicia
