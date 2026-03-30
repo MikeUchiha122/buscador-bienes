@@ -107,6 +107,13 @@ AssetManager/
 
 </div>
 
+## 📚 Documentación
+
+| Documento | Descripción |
+|-----------|-------------|
+| [📖 GUIA.md](docs/GUIA.md) | Guía completa de uso |
+| [📄 GUIA_COMPLETA.docx](GUIA_COMPLETA_BUSCADOR_BIENES.docx) | Guía técnica detallada |
+
 ## 📄 Licencia
 
 Este proyecto está bajo la **Licencia MIT**.
