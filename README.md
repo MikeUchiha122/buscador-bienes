@@ -1,96 +1,120 @@
-# Buscador de Bienes SICOBIM
+# 🗂️ Asset Manager
 
-Aplicación de escritorio desarrollada en Python para la gestión integral del inventario de bienes muebles del ISSSTE México.
+<p align="center">
+  <img src="https://img.shields.io/badge/Python-3.8+-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python">
+  <img src="https://img.shields.io/badge/License-MIT-green?style=for-the-badge">
+  <img src="https://img.shields.io/badge/Platform-Windows-blue?style=for-the-badge">
+</p>
 
-## Descripción
+> Aplicación de escritorio para la gestión integral de inventarios de activos empresariales.
 
-Sistema de gestión de inventario que permite administrar bienes muebles mediante una interfaz gráfica intuitiva, con capacidades de búsqueda avanzada, filtrado por estado y registro de operaciones.
+## 📋 Descripción
 
-## Características
+**Asset Manager** es una solución de escritorio desarrollada en Python que permite administrar inventarios de activos mediante una interfaz gráfica moderna e intuitiva.
 
-| Característica | Descripción |
-|----------------|-------------|
-| **Búsqueda multidimensional** | Busca por número de inventario, descripción, ubicación o estado |
-| **Filtros dinámicos** | Filtra por VIGENTES, BAJAS o TODOS los bienes |
-| **Gestión de bienes** | Visualización de detalle, edición de campos y bajas lógicas |
-| **Interfaz moderna** | Diseño oscuro con temática de ciberseguridad |
-| **Logging completo** | Registro de todas las operaciones en archivo.log |
+## ✨ Características
 
-## Requisitos del Sistema
+| Función | Descripción |
+|---------|-------------|
+| 🔍 **Búsqueda Avanzada** | Filtra por código, descripción, ubicación o estado |
+| 📊 **Filtros Dinámicos** | Visualiza activos por estado: ACTIVOS, INACTIVOS, TODOS |
+| ✏️ **Gestión Completa** | Ver detalle, editar campos y gestionar estados |
+| 🌙 **Interfaz Oscura** | Diseño moderno con tema oscuro profesional |
+| 📝 **Logging** | Registro completo de operaciones del sistema |
 
-- Python 3.8 o superior
-- Windows 7/8/10/11
-- Dependencias: `pandas`, `openpyxl`
+## 🛠️ Requisitos
 
-## Instalación
+- **Python**: 3.8 o superior
+- **SO**: Windows 7/8/10/11
+- **Dependencias**: `pandas`, `openpyxl`
+
+## 🚀 Instalación
 
 ```bash
-# Clonar el repositorio
+# Clonar repositorio
 git clone https://github.com/MikeUchiha122/buscador-bienes.git
 
-# Navegar al directorio
+# Entrar al directorio
 cd buscador-bienes
 
 # Instalar dependencias
 pip install pandas openpyxl
 ```
 
-## Uso
+## 💻 Uso
 
 ```bash
 python buscador_bienes.py
 ```
 
-### Guía de操作es
+### Controles
 
-- **Búsqueda**: Escribe en el campo de texto para filtrar resultados en tiempo real
-- **Filtros**: Usa los botones para mostrar bienes VIGENTES, BAJAS o TODOS
-- **Detalle**: Doble clic en cualquier fila para ver información completa
-- **Edición**: Selecciona una fila y modifica los campos deseados
-- **Baja**: Selecciona un bien y haz clic en "DAR DE BAJA" para desactivar (STATUS=0)
+| Acción | Descripción |
+|--------|-------------|
+| **Búsqueda** | Escribe para filtrar en tiempo real |
+| **Filtros** | Botones para estados: ACTIVOS / INACTIVOS / TODOS |
+| **Detalle** | Doble clic en fila para ver información completa |
+| **Editar** | Selecciona fila y modifica campos |
+| **Gestionar** | Botón para cambiar estado del activo |
 
-## Estructura del Proyecto
+## 📁 Estructura
 
 ```
 buscador-bienes/
-├── buscador_bienes.py      # Aplicación principal (GUI Tkinter)
-├── crear_word.py           # Generador de documentos Word
-├── crear_word2.py          # Generador de documentos (v2)
-├── cruzar_bienes.py        # Utilidad de cruces de inventario
-├── cruzar_inventario.py    # Utilidad de cruces
+├── buscador_bienes.py         # Aplicación principal
+├── crear_word.py              # Generador de documentos
+├── crear_word2.py              # Generador de documentos v2
+├── cruzar_bienes.py           # Utilidad de cruces
+├── cruzar_inventario.py       # Utilidad de cruces
 ├── cruzar_por_inventario.py
-├── BASE_BIENES_UNIDAD.xlsx # Base de datos de bienes
-├── bienes.log              # Archivo de logs
-└── README.md              # Este archivo
+├── BASE_BIENES_UNIDAD.xlsx    # Base de datos
+├── bienes.log                 # Logs del sistema
+└── README.md                  # Este archivo
 ```
 
-## Tecnologías Utilizadas
+## 🖥️ Vista Previa
+
+```
+┌─────────────────────────────────────────────────┐
+│  🗂️ Asset Manager                    [─][□][×] │
+├─────────────────────────────────────────────────┤
+│  🔍 Buscar...                        [BUSCAR]  │
+├─────────────────────────────────────────────────┤
+│  [ACTIVOS] [INACTIVOS] [TODOS]                  │
+├─────────────────────────────────────────────────┤
+│  #  │ Código   │ Descripción    │ Ubicación   │
+│─────┼──────────┼────────────────┼──────────────│
+│  1  │ INV-001  │ Laptop Dell    │ Oficina A    │
+│  2  │ INV-002  │ Escritorio    │ Oficina B    │
+│  3  │ INV-003  │ Silla Ergonom. │ Bodega       │
+├─────────────────────────────────────────────────┤
+│  [EDITAR]  [VER DETALLE]  [GESTIONAR]           │
+└─────────────────────────────────────────────────┘
+```
+
+## 🔧 Tecnologías
 
 <div align="center">
 
-![Python](https://img.shields.io/badge/Python-3.8+-3776AB?style=flat&logo=python&logoColor=white)
-![Tkinter](https://img.shields.io/badge/Tkinter-GUI-FF5722?style=flat&logo=python)
-![Pandas](https://img.shields.io/badge/Pandas-Data-150458?style=flat&logo=pandas)
-![Excel](https://img.shields.io/badge/Excel-Storage-217346?style=flat&logo=microsoft-excel)
+| Tecnología | Propósito |
+|------------|-----------|
+| Python 3.8+ | Lenguaje principal |
+| Tkinter | Interfaz gráfica |
+| Pandas | Manipulación de datos |
+| Excel | Almacenamiento |
 
 </div>
 
-## Capturas de Pantalla
+## 📄 Licencia
 
-La aplicación cuenta con:
-- Interfaz oscura con colores profesional
-- Tabla de resultados con scroll
-- Panel de búsqueda y filtros
-- Botones de acción para gestión de bienes
-
-## Licencia
-
-MIT License - Ver archivo LICENSE para más detalles.
+Este proyecto está bajo la **Licencia MIT**. Consulta el archivo `LICENSE` para más información.
 
 ---
 
-**Desarrollado por**: Ing. Miguel Ángel Ramírez Galicia  
-**Organización**: ISSSTE México  
-**Versión**: 1.0.0
+<div align="center">
 
-¿Dudas o sugerencias? Abre un issue en el repositorio.
+**Desarrollado por** Miguel Ángel Ramírez Galicia
+
+⭐️ ¡Dale una estrella si te fue útil!
+
+</div>
