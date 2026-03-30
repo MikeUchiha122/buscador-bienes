@@ -1,0 +1,9 @@
+*.xlsx
+*.xls
+*.log
+__pycache__/
+*.pyc
+archivo_cruzar/
+dist/
+build/
+*.spec
