@@ -7,3 +7,6 @@ archivo_cruzar/
 dist/
 build/
 *.spec
+gh.exe
+gh.zip
+gh_temp/
